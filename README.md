@@ -21,7 +21,10 @@ for a set amount of time, saves those keystrokes in a txt file and emails the te
 ![image](https://github.com/user-attachments/assets/10a06c19-8d3f-43d3-aafe-86a8f48f1405)
 
 I needed to include the the YML file in the executable package I created
+
 ![image](https://github.com/user-attachments/assets/da0db9a7-65c3-4176-9ee1-615f4a9ba973)
+
+![image](https://github.com/user-attachments/assets/caa52233-edcd-4713-b4ff-850f95fb0d30)
 
 
 # Demo
