@@ -6,7 +6,7 @@ Built a python script that I embedded in a jpeg such that when the jpeg is opene
 for a set amount of time, saves those keystrokes in a txt file and emails the text file to me.
 
 # Code Break Down
-## Begin with imports from python libraries that will make the code possible:
+** Begin with imports from python libraries that will make the code possible: **
 
  - smtplib: for sending emails using the Simple Mail Transfer Protocol (SMTP).
  - os: for interacting with the operating system, such as file and path operations.
@@ -21,7 +21,7 @@ for a set amount of time, saves those keystrokes in a txt file and emails the te
 ![image](https://github.com/user-attachments/assets/b5170469-88ad-4909-99ba-21bd8ba1f437)
 
 
-## Resource Path and Credential Loading from my Yml file
+** Resource Path and Credential Loading from my Yml file **
 
 This section of the code handles the safe loading of credentials from an external YAML file (DO_NOT_SHARE.yml). The resource_path function ensures the correct file path is used, whether the script is run normally or as a PyInstaller executable. By dynamically setting the base_path, the code can locate resources seamlessly in both development and deployed environments. This super important for when you convert your file from py to .exe
 The email credentials (sender_email, receiver_email, and password) are securely fetched from my YAML file called  (DO_NOT_SHARE.yml), allowing for easier configuration management and avoiding hardcoding sensitive information directly in the script. And the keyfile path is where all captured keystrokes will be logged for later remote extraction via email.
