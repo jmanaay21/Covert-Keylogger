@@ -20,6 +20,9 @@ for a set amount of time, saves those keystrokes in a txt file and emails the te
 # Executable creation and Winrar embedding
 ![image](https://github.com/user-attachments/assets/10a06c19-8d3f-43d3-aafe-86a8f48f1405)
 
+I needed to include the the YML file in the executable package I created
+![image](https://github.com/user-attachments/assets/da0db9a7-65c3-4176-9ee1-615f4a9ba973)
+
 
 # Demo
 ![image](https://github.com/user-attachments/assets/18b9580c-5591-4213-a924-8b5495abb8a7)
