@@ -24,6 +24,7 @@ for a set amount of time, saves those keystrokes in a txt file and emails the te
 **Resource Path and Credential Loading from my Yml file**
 
 This section of the code handles the safe loading of credentials from an external YAML file (DO_NOT_SHARE.yml). The resource_path function ensures the correct file path is used, whether the script is run normally or as a PyInstaller executable. By dynamically setting the base_path, the code can locate resources seamlessly in both development and deployed environments. This super important for when you convert your file from py to .exe
+
 The email credentials (sender_email, receiver_email, and password) are securely fetched from my YAML file called  (DO_NOT_SHARE.yml), allowing for easier configuration management and avoiding hardcoding sensitive information directly in the script. And the keyfile path is where all captured keystrokes will be logged for later remote extraction via email.
 
 ![image](https://github.com/user-attachments/assets/3dfce0ab-e8d3-4a86-9d83-1209bdaf51e5)
