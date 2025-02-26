@@ -29,8 +29,13 @@ The email credentials (sender_email, receiver_email, and password) are securely 
 
 ![image](https://github.com/user-attachments/assets/3dfce0ab-e8d3-4a86-9d83-1209bdaf51e5)
 
+### Keylogger Deployment and Execution  
 
+This section is where I deploy the keylogger, which captures all of the targerts key strokes for 20 seconds. The "keyPressed" function is the core of the keylogger, recording each keystroke to the "Keyfile.txt". Regular characters are logged directly, while special inputs like the spacebar are logged in a bracketed format ([key.enter]),making it easier to analyze later on.
+
+The pynput library creates a keyboard listener that runs asynchronously, allowing the program to continue executing while keystrokes are captured. After 20 seconds, the listener automatically stops, and the program validates whether the log file exists before proceeding to send the data via email. Note that ensuring the log file exits is important to ensuring that the extract data is ready for extraction.
 ![image](https://github.com/user-attachments/assets/3c26d272-209f-4e98-bf8b-0254d14247e4)
+
 
 
 ![image](https://github.com/user-attachments/assets/ba2eed7a-0f0b-493a-ade4-ed77d15b41c5)
