@@ -6,6 +6,18 @@ Built a python script that I embedded in a jpeg such that when the jpeg is opene
 for a set amount of time, saves those keystrokes in a txt file and emails the text file to me.
 
 # Code Break Down
+Begin with imports from python libraries that will make the code possible:
+
+ smtplib: for sending emails using the Simple Mail Transfer Protocol (SMTP).
+ os: for interacting with the operating system, such as file and path operations.
+ time: for handling time-related functions, including delays and timestamps.
+ yaml (as yml): for loading configuration data from YAML files (e.g., email credentials).
+ pynput.keyboard: for capturing and logging keystrokes using a keyboard listener.
+ email.mime.multipart.MIMEMultipart: for constructing multipart email messages.
+ email.mime.text.MIMEText: for adding plain text content to the email body.
+ email.mime.base.MIMEBase: for handling attachments in email messages.
+ sys: for accessing system-specific parameters and functions, particularly for handling paths in executable environments.
+
 ![image](https://github.com/user-attachments/assets/b5170469-88ad-4909-99ba-21bd8ba1f437)
 
 
@@ -28,6 +40,8 @@ I needed to include the the YML file in the executable package I created
 
 
 # Demo
+![image](https://github.com/user-attachments/assets/97262ed6-e9e1-4f70-8f91-1fd1099bf67d)
+
 ![image](https://github.com/user-attachments/assets/18b9580c-5591-4213-a924-8b5495abb8a7)
 
 ![image](https://github.com/user-attachments/assets/befde4aa-fc91-4d34-94cd-e6d1d5d983ec)
