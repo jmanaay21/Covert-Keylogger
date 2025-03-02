@@ -42,9 +42,7 @@ This section is where the email is generated and sent, containing the logged key
 
 The body of the email is kept minimal, serving only as a placeholder, while the keylogger.txt generate before is attached to the message. The file is opened in **binary mode, and its contents are loaded as an octet-stream, ensuring compatibility with different email clients. The content-Disposition header is added to specify that the file should be treated as an attachment, using its original filename.  
 
-Once the email is fully composed, an **SMTP session** is established using Gmail’s SMTP server (`smtp.gmail.com`). The connection is **secured with TLS**, and the script logs into the sender's email account using the extracted credentials. The email is then sent to the recipient, ensuring remote access to the captured keystroke data.  
-
-The script includes a **try-except block** to handle potential errors, such as incorrect login credentials or network issues. If the email is sent successfully, a confirmation message is displayed. Otherwise, any encountered error is printed for debugging purposes.
+Once the email is fully composed, an **SMTP session** is established using Gmail’s SMTP server. The connection is **secured with TLS**, and the script logs into the sender's email account using the extracted credentials. The email is then sent to the recipient, ensuring remote access to the captured keystroke data.  
 
 ![image](https://github.com/user-attachments/assets/ba2eed7a-0f0b-493a-ade4-ed77d15b41c5)
 
