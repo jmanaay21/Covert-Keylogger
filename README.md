@@ -59,7 +59,6 @@ I needed to include the the YML file in the executable package I created as prev
 
 
 # Demo
-![image](https://github.com/user-attachments/assets/97262ed6-e9e1-4f70-8f91-1fd1099bf67d)
 
 ![image](https://github.com/user-attachments/assets/633d9869-7f3a-4f27-ada2-046db6b28f17)
 
