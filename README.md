@@ -36,14 +36,22 @@ This section is where I deploy the keylogger, which captures all of the targerts
 The pynput library creates a keyboard listener that runs asynchronously, allowing the program to continue executing while keystrokes are captured. After 20 seconds, the listener automatically stops, and the program validates whether the log file exists before proceeding to send the data via email. Note that ensuring the log file exits is important to ensuring that the extract data is ready for extraction.
 ![image](https://github.com/user-attachments/assets/3c26d272-209f-4e98-bf8b-0254d14247e4)
 
+### Email Creation and Transmission  
 
+This section is where the email is generated and sent, containing the logged keystroke data as an attachment. The MIMEMultipart object is used to construct the email, with the sender and receiver information assigned dynamically from the stored credentials. This is important to remember because this means that I will need to store yml file with my login credentials in the file path when create an excutable. 
+
+The body of the email is kept minimal, serving only as a placeholder, while the keylogger.txt generate before is attached to the message. The file is opened in **binary mode, and its contents are loaded as an octet-stream, ensuring compatibility with different email clients. The content-Disposition header is added to specify that the file should be treated as an attachment, using its original filename.  
+
+Once the email is fully composed, an **SMTP session** is established using Gmail’s SMTP server (`smtp.gmail.com`). The connection is **secured with TLS**, and the script logs into the sender's email account using the extracted credentials. The email is then sent to the recipient, ensuring remote access to the captured keystroke data.  
+
+The script includes a **try-except block** to handle potential errors, such as incorrect login credentials or network issues. If the email is sent successfully, a confirmation message is displayed. Otherwise, any encountered error is printed for debugging purposes.
 
 ![image](https://github.com/user-attachments/assets/ba2eed7a-0f0b-493a-ade4-ed77d15b41c5)
 
 # Executable creation and Winrar embedding
 ![image](https://github.com/user-attachments/assets/10a06c19-8d3f-43d3-aafe-86a8f48f1405)
 
-I needed to include the the YML file in the executable package I created
+I needed to include the the YML file in the executable package I created as previously mentioned
 
 ![image](https://github.com/user-attachments/assets/da0db9a7-65c3-4176-9ee1-615f4a9ba973)
 
